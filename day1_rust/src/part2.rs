@@ -27,16 +27,11 @@ fn replace_all(s: &str) -> String {
     while input.len() > 0 {
         let mut replaced = false;
 
-        // println!("input.len() = {}", input.len());
-        // println!("input = '{input}', result = '{result}'");
         for (i, replacement) in replacements.iter().enumerate() {
             if input.starts_with(replacement) {
                 let c = char::from_u32('0' as u32 + i as u32 + 1u32).unwrap();
-                // println!("Replacing '{replacement}' with '{c}'");
                 result.push(c);
-                let len = replacement.len();
                 input = input[1..].to_string();
-                // println!("update: input = '{input}', result = '{result}'");
 
                 replaced = true;
                 continue;
@@ -44,7 +39,6 @@ fn replace_all(s: &str) -> String {
         }
 
         if !replaced {
-            // If there were no replacements, copy the first char to result
             result.push(input.chars().nth(0).unwrap());
             input.remove(0);
         }

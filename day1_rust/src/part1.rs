@@ -35,7 +35,6 @@ pub fn get_value(s: &str) -> i64 {
 pub fn run() {
     let mut sum = 0i64;
     for input in INPUT_DAY1_1.split("\n") {
-        // println!("Input = '{input}'");
         let actual = get_value(input);
         sum = sum + actual;
     }
