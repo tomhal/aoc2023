@@ -13,7 +13,7 @@
     Consider your entire calibration document. What is the sum of all of the calibration values?
 */
 
-use crate::inputs::INPUT_DAY1_1;
+use crate::inputs::DATA;
 
 fn get_first_digit(s: &str) -> i64 {
     let i = s.find(|c: char| c.is_digit(10)).unwrap();
@@ -34,7 +34,7 @@ pub fn get_value(s: &str) -> i64 {
 
 pub fn run() {
     let mut sum = 0i64;
-    for input in INPUT_DAY1_1.split("\n") {
+    for input in DATA.split("\n") {
         let actual = get_value(input);
         sum = sum + actual;
     }

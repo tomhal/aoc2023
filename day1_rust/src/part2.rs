@@ -14,7 +14,7 @@
     In this example, the calibration values are 29, 83, 13, 24, 42, 14, and 76. Adding these together produces 281.
 */
 
-use crate::{inputs::INPUT_DAY1_1, part1::get_value};
+use crate::{inputs::DATA, part1::get_value};
 
 fn replace_all(s: &str) -> String {
     let replacements = [
@@ -49,7 +49,7 @@ fn replace_all(s: &str) -> String {
 
 pub fn run() {
     let mut sum = 0;
-    for input in INPUT_DAY1_1.split("\n") {
+    for input in DATA.split("\n") {
         let modified_input = replace_all(input);
         let actual = get_value(modified_input.as_str());
         sum = sum + actual;

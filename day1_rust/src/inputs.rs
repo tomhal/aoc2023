@@ -1,4 +1,4 @@
-pub const INPUT_DAY1_1: &str = "gtlbhbjgkrb5sixfivefivetwosix
+pub const DATA: &str = "gtlbhbjgkrb5sixfivefivetwosix
 ninesixrgxccvrqscbskgzxh6cpvpxsqnb6
 dxxzrlzkksfsffp4
 sbzvmddhnjtwollnjv33d2lbcscstqt
