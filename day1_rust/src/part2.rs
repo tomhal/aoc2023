@@ -61,7 +61,7 @@ pub fn run() {
 
 #[cfg(test)]
 mod tests {
-    use crate::{inputs, part1::get_value};
+    use crate::part1::get_value;
 
     // Note this useful idiom: importing names from outer (for mod tests) scope.
     use super::*;
